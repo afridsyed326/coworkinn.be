@@ -27,10 +27,10 @@ const Meeting = () => {
 
     const meetingImages = [
         {
-            image: "meet_1.jpeg",
+            image: "of_5.jpg",
         },
         {
-            image: "meet_2.jpeg",
+            image: "meet.jpg",
         },
         {
             image: "meet_3.jpeg",
@@ -39,9 +39,9 @@ const Meeting = () => {
 
     return (
         <div className="w-full mb-10">
-            <Hero text="MEETING ROOMS" bgUrl="images/meeting.jpeg" />
+            <Hero text="MEETING ROOMS" bgUrl="images/meet.jpg" />
             <div className="p-2 text-center text-lg my-6">
-                <span class="">
+                <span className="">
                     <br />
                     Do you require an ad-hoc meeting?
                     <br />

@@ -25,7 +25,7 @@ const Offices = () => {
             subTitle: "from € 95 per month",
         },
         {
-            image: "off_5.jpeg",
+            image: "of_5.jpg",
             title: "Meeting Rooms",
             subTitle: "from € 150 per meeting",
         },
@@ -33,10 +33,10 @@ const Offices = () => {
 
     return (
         <div className="w-full mb-10">
-            <Hero text="OFFICES" bgUrl="images/offices.jpg" />
+            <Hero text="OFFICES" bgUrl="images/of_1.jpg" />
 
             <div className="p-2 text-center text-lg my-6">
-                <span class="">
+                <span className="">
                     Cowork Inn has the right office formula for you:
                     <br />
                     the Private Office provides you with your own, standard

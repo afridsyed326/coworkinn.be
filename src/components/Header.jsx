@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import GoogleTranslate from "./GoogleTranslate";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
@@ -31,7 +31,7 @@ const Header = () => {
     const [navExpanded, setNavExpanded] = useState(false);
 
     return (
-        <div className="border-b border-primary bg-primary">
+        <div className="z-[10000] sticky top-0 left-0 border-b border-primary bg-primary flex justify-center items-center">
             <div className="container w-[100vw] flex justify-between items-left sm:gap-10 p-3 py-4 sm:px-8 flex-col sm:flex-row">
                 <div className="w-full flex justify-between items-center">
                     <img
@@ -52,14 +52,13 @@ const Header = () => {
                         }`}
                     >
                         {navLinks.map((nav, i) => (
-                            <Link to={nav.path}>
+                            <Link key={i} to={nav.path}>
                                 <li
                                     className={`uppercase w-fit cursor-pointer text-mainbg px-4 py-2 rounded-full font-bold mt-3 sm:mt-0 ${
                                         activeTab === nav.key
                                             ? "bg-mainbg !text-primary px-8 sm:px-4"
                                             : ""
                                     }`}
-                                    key={i}
                                     onClick={() => setActiveTab(nav.key)}
                                 >
                                     {nav.label}
@@ -68,6 +67,14 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
+                {navExpanded && (
+                    <div className="flex justify-end sm:hidden">
+                        <GoogleTranslate />
+                    </div>
+                )}
+            </div>
+            <div className="hidden sm:flex">
+                <GoogleTranslate />
             </div>
         </div>
     );

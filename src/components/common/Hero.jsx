@@ -3,7 +3,7 @@ import React from "react";
 const Hero = ({ text, bgUrl }) => {
     return (
         <div
-            className="h-[400px] bg-cover bg-center relative bg-blend-overlay"
+            className="h-[500px] bg-cover bg-center relative bg-blend-overlay"
             style={{
                 backgroundImage: `url(${bgUrl})`,
                 backgroundColor: "rgba(0,0,0, 0.2)",

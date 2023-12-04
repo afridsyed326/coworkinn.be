@@ -1,0 +1,103 @@
+#google_translate_element {
+    color: #041f60 !important;
+}
+
+/* .skiptranslate iframe {
+    display: none !important;
+} */
+
+.goog-te-combo {
+    /* Customize the select box styles */
+    background-color: white !important;
+    color: #041f60 !important;
+    font-size: 16px !important;
+    border: 1.25px solid #041f60 !important;
+    border-radius: 3px !important;
+    padding: 10px !important;
+    width: 80px !important;
+    cursor: pointer !important;
+    outline: none !important;
+}
+
+/* Hide the "Select Language" text */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Hide the Google logo */
+.goog-logo-link {
+    display: none !important;
+}
+
+/* Hide the "Select Language" text */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Hide the Google logo */
+.goog-logo-link {
+    display: none !important;
+}
+
+.skiptranslate span {
+    display: none !important;
+}
+
+.skiptranslate iframe#\:1\.container {
+    display: none !important;
+}
+
+.skiptranslate iframe#\:2\.container {
+    display: none !important;
+}
+
+.skiptranslate {
+    font-size: 0 !important;
+}
+
+/* Hide the Google Translate dropdown arrow */
+.goog-te-combo {
+    -moz-appearance: none !important; /* Firefox */
+    -webkit-appearance: none !important; /* Safari and Chrome */
+    appearance: none !important;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 3% !important;
+    background-position-y: 10px !important;
+    padding-left: 35px !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-te-gadget-icon {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .goog-te-gadget-icon {
+        /* display: none !important; */
+        padding: 15px;
+        visibility: hidden;
+        opacity: 0 !important;
+        border: transparent !important;
+    }
+
+    .goog-te-gadget-simple {
+        padding: 10px;
+        height: 22px;
+        background-color: transparent !important;
+        transform: translate(30%, -30%) !important;
+        border: none !important;
+    }
+    /* Add your custom icon as a background image */
+    .custom-icon {
+        width: 24px !important;
+        height: 24px !important;
+        background-image: url("../../public/images/translate.png") !important;
+        background-size: cover !important;
+        cursor: pointer !important;
+        padding: 8px !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+}
