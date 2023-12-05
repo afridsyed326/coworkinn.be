@@ -96,7 +96,7 @@ const Meeting = () => {
             </div>
 
             <div className="bg-primary px-2 sm:px-52">
-                <div className="mt-10 p-10 sm:py-14 sm:px-24  flex flex-col sm:flex-row justify-between items-center">
+                <div className="mt-10 p-10 sm:py-14 sm:px-24  flex flex-col gap-6 justify-between items-center">
                     <div className="text-white font-bold text-2xl sm:text-4xl">
                         Need a meeting room?
                     </div>

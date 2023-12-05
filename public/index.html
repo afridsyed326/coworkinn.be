@@ -7,13 +7,32 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app" />
+      content="Find your perfect workspace at Cowork Inn: Private, Flex, and Coworking options. Elevate meetings with our Meeting Rooms. Your ideal office awaits!" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script>
+      function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+      }
+
+      function getCookie(key) {
+          var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+          return keyValue ? keyValue[2] : null;
+      }
+
+      var translateCookie = getCookie('googtrans');
+
+      if(!translateCookie) {
+        setCookie('googtrans', '/en/nl', 1);
+      }
+
+    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,7 +42,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Coworkinn</title>
+    <title>Cowork Inn - Tailored Office Solutions for Every Entrepreneur</title>
+    <meta name="keywords"
+      content="Coworking, Private Office, Flex Office, Meeting Rooms, Workspace Solutions, Collaborative Workspaces, Entrepreneurial Spaces">
+    <meta name="author" content="Cowork Inn">
+    <meta name="description"
+      content="Cowork Inn offers versatile workspace solutions, including Private Offices, Flex Offices, and Coworking Spaces. Elevate your meetings with our state-of-the-art Meeting Rooms. Find the perfect office formula for your entrepreneurial journey.">
+
+    <meta property="og:title"
+      content="Cowork Inn - Tailored Office Solutions for Every Entrepreneur">
+    <meta property="og:description"
+      content="Discover versatile workspace solutions at Cowork Inn, including Private, Flex, and Coworking options. Elevate meetings with our Meeting Rooms. Your ideal office awaits!">
+    <meta property="og:image" content="URL_TO_YOUR_SOCIAL_MEDIA_THUMBNAIL_IMAGE">
+    <meta property="og:url" content="URL_TO_YOUR_WEBSITE">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+      content="Cowork Inn - Tailored Office Solutions for Every Entrepreneur">
+    <meta name="twitter:description"
+      content="Discover versatile workspace solutions at Cowork Inn, including Private, Flex, and Coworking options. Elevate meetings with our Meeting Rooms. Your ideal office awaits!">
+    <meta name="twitter:image" content="URL_TO_YOUR_TWITTER_THUMBNAIL_IMAGE">
+    <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

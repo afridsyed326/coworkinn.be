@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = ({ text, bgUrl }) => {
+const Hero = ({ text, bgUrl, desc = "" }) => {
     return (
         <div
             className="h-[500px] bg-cover bg-center relative bg-blend-overlay"
@@ -10,10 +10,11 @@ const Hero = ({ text, bgUrl }) => {
             }}
         >
             <div
-                className="absolute top-[50%] left-[50%] flex justify-center items-center translate-x-[-50%] 
-                translate-y-[-50%] h-[100px]  font-extrabold text-4xl text-white text-center"
+                className="absolute top-[50%] left-[50%] flex flex-col justify-center items-center translate-x-[-50%] 
+                translate-y-[-50%] h-[100px] w-full sm:w-auto  font-extrabold text-4xl text-white text-center"
             >
-                {text}
+                <div>{text}</div>
+                <div className="font-light mt-2 text-2xl">{desc}</div>
             </div>
         </div>
     );
