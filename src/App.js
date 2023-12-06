@@ -5,13 +5,15 @@ import Layout from "./Layout";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Facilities from "./components/Facilities";
 import Contact from "./components/Contact";
+import Home from "./components/Home";
 
 const App = () => {
     return (
         <Router>
             <Layout>
                 <Routes>
-                    <Route exact path="/" element={<Offices />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/offices" element={<Offices />} />
                     <Route exact path="/meeting" element={<Meeting />} />
                     <Route exact path="/facilities" element={<Facilities />} />
                     <Route exact path="/contact" element={<Contact />} />

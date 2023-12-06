@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = ({ text, bgUrl, desc = "" }) => {
+const Hero = ({ text, bgUrl, desc = "", customJsx = "" }) => {
     return (
         <div
             className="h-[500px] bg-cover bg-center relative bg-blend-overlay"
@@ -15,6 +15,7 @@ const Hero = ({ text, bgUrl, desc = "" }) => {
             >
                 <div>{text}</div>
                 <div className="font-light mt-2 text-2xl">{desc}</div>
+                {customJsx}
             </div>
         </div>
     );

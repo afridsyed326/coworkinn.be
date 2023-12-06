@@ -9,7 +9,7 @@ const Header = () => {
         {
             label: "Offices",
             key: "offices",
-            path: "/",
+            path: "/offices",
         },
         {
             label: "Meeting rooms",
