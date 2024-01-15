@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./common/Hero";
 import { Link } from "react-router-dom";
 import { LiaCarSolid } from "react-icons/lia";
@@ -23,6 +23,13 @@ const Home = () => {
             desc: "The basic tenets of a contemporary office space",
         },
     ];
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Optional: adds smooth scrolling animation
+        });
+    }, []);
 
     return (
         <div className="w-full">

@@ -26,8 +26,6 @@
           document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';domain=www.' + window.location.hostname + ';samesite=none;secure';
       }
 
-
-
       function getCookie(key) {
           var name = key + "=";
           var decodedCookie = decodeURIComponent(document.cookie);
@@ -45,6 +43,7 @@
 
           return trans;
       }
+
 
       var translateCookie = getCookie('googtrans');
 

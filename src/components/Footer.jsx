@@ -1,21 +1,53 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const Footer = () => {
     const links = [
-        "Home",
-        "Offices",
-        "Meeting rooms",
-        "About us",
-        "Activities",
-        "Facilities",
-        "Contact",
+        {
+            name: "Home",
+            path: "/",
+        },
+        {
+            name: "Offices",
+            path: "offices",
+        },
+        {
+            name: "Meeting rooms",
+            path: "meeting",
+        },
+        {
+            name: "Facilities",
+            path: "facilities",
+        },
+        {
+            name: "Contact",
+            path: "contact",
+        },
     ];
 
     const offices = [
-        "Private Office",
-        "Flex Office",
-        "Coworking",
-        "Virtual Office",
+        {
+            name: "Private Office",
+            path: "offices/prv",
+        },
+        {
+            name: "Flex Office",
+            path: "offices/flex",
+        },
+        {
+            name: "Coworking",
+            path: "offices/co",
+        },
+        {
+            name: "Meeting Rooms",
+            path: "offices/meeting",
+        },
+        {
+            name: "Virtual Office",
+            path: "offices/virtual",
+        },
+
         "Meeting Rooms",
     ];
 
@@ -29,99 +61,30 @@ const Footer = () => {
                             <ul className="list-none footer-links">
                                 {links.map((li, i) => (
                                     <li key={i} className="mb-2">
-                                        <a
-                                            href="#"
-                                            className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                        >
-                                            {li}
-                                        </a>
+                                        <Link to={li.path}>
+                                            <span className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">
+                                                {li.name}
+                                            </span>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
                         </div>
                         <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
-                            <h5 className="text-xl font-bold mb-6">
-                                Resources
-                            </h5>
+                            <h5 className="text-xl font-bold mb-6">Offices</h5>
                             <ul className="list-none footer-links">
                                 {offices.map((off, i) => (
                                     <li key={i} className="mb-2">
-                                        <a
-                                            href="#"
-                                            className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                        >
-                                            {off}
-                                        </a>
+                                        <Link to={off.path}>
+                                            <span className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">
+                                                {off.name}
+                                            </span>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        {/* <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-                            <h5 className="text-xl font-bold mb-6">About</h5>
-                            <ul className="list-none footer-links">
-                                <li className="mb-2">
-                                    <a
-                                        href="#"
-                                        className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                    >
-                                        Team
-                                    </a>
-                                </li>
-                                <li className="mb-2">
-                                    <a
-                                        href="#"
-                                        className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                    >
-                                        Locations
-                                    </a>
-                                </li>
-                                <li className="mb-2">
-                                    <a
-                                        href="#"
-                                        className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                    >
-                                        Privacy
-                                    </a>
-                                </li>
-                                <li className="mb-2">
-                                    <a
-                                        href="#"
-                                        className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                    >
-                                        Terms
-                                    </a>
-                                </li>
-                            </ul>
-                        </div> */}
-                        {/* <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-                            <h5 className="text-xl font-bold mb-6">Help</h5>
-                            <ul className="list-none footer-links">
-                                <li className="mb-2">
-                                    <a
-                                        href="#"
-                                        className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                    >
-                                        Support
-                                    </a>
-                                </li>
-                                <li className="mb-2">
-                                    <a
-                                        href="#"
-                                        className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                    >
-                                        Help Center
-                                    </a>
-                                </li>
-                                <li className="mb-2">
-                                    <a
-                                        href="#"
-                                        className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800"
-                                    >
-                                        Contact Us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div> */}
+
                         <div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
                             <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">
                                 Address

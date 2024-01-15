@@ -28,7 +28,7 @@ const Header = () => {
         },
     ];
 
-    const [activeTab, setActiveTab] = useState("offices");
+    const [activeTab, setActiveTab] = useState("");
     const [navExpanded, setNavExpanded] = useState(false);
 
     const location = useLocation();
@@ -36,19 +36,19 @@ const Header = () => {
     useEffect(() => {
         const path = location.pathname;
         const link = path.split("/")[1];
-        setActiveTab(path === "/" ? "offices" : link);
-    }, [activeTab]);
+        setActiveTab(path === "/" ? "" : link);
+    }, [activeTab, location]);
 
-    const [lang, setLang] = useState("");
+    // const [lang, setLang] = useState("");
 
-    const langs = ["EN", "NL", "FR"];
+    // const langs = ["EN", "NL", "FR"];
 
-    const changeLanguage = (lang) => {
-        const ln = lang.toLowerCase();
-        setLang(ln);
-        window.setCookie("googtrans", `/en/${ln}`, 1);
-        window.location.reload();
-    };
+    // const changeLanguage = (lang) => {
+    //     const ln = lang.toLowerCase();
+    //     setLang(ln);
+    //     window.Cookie.set("googtrans", `/en/${ln}`);
+    //     window.location.reload();
+    // };
 
     return (
         <div className="z-[10000] sticky top-0 left-0 border-b border-primary bg-primary flex justify-center items-center">
@@ -91,19 +91,8 @@ const Header = () => {
                             </Link>
                         ))}
                         <li>
-                            <div className="sm:border-l border-white text-sm">
-                                <GoogleTranslate lang={lang} />
-                                <div className="flex justify-center sm:ml-2 mt-5 sm:mt-0 gap-2 text-white font-bold">
-                                    {langs.map((ln, i) => (
-                                        <span
-                                            key={i}
-                                            className="notranslate cursor-pointer transition-all ease-in-out hover:text-accent"
-                                            onClick={() => changeLanguage(ln)}
-                                        >
-                                            {ln}
-                                        </span>
-                                    ))}
-                                </div>
+                            <div className="sm:border-l border-white text-sm pl-10">
+                                <GoogleTranslate />
                             </div>
                         </li>
                     </ul>

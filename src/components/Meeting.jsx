@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./common/Hero";
 
 const Meeting = () => {
@@ -36,6 +36,13 @@ const Meeting = () => {
             image: "meet_3.jpeg",
         },
     ];
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Optional: adds smooth scrolling animation
+        });
+    }, []);
 
     return (
         <div className="w-full mb-10">
