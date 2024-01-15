@@ -132,7 +132,7 @@ const Footer = () => {
                     </div>
 
                     <div className="w-full text-center mt-4">
-                        All rights reserved © 2023 Coworkinn
+                        All rights reserved © 2024 Coworkinn
                     </div>
                 </div>
             </footer>
