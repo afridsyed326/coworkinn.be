@@ -32,7 +32,6 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-        return;
         try {
             emailjs
                 .send(

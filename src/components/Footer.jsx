@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Footer = () => {
     const links = [
@@ -28,27 +28,58 @@ const Footer = () => {
 
     const offices = [
         {
-            name: "Private Office",
-            path: "offices/prv",
-        },
-        {
             name: "Flex Office",
             path: "offices/flex",
         },
         {
-            name: "Coworking",
+            name: "Conference rooms",
+            path: "/meeting",
+        },
+        {
+            name: "Postmail",
             path: "offices/co",
         },
         {
-            name: "Meeting Rooms",
-            path: "offices/meeting",
+            name: "Workshop space",
+            path: "offices/prv",
         },
         {
-            name: "Virtual Office",
+            name: "Reception room",
             path: "offices/virtual",
         },
+    ];
 
-        "Meeting Rooms",
+    const officeTypes = [
+        {
+            image: "off_2.jpeg",
+            title: "Flex Office",
+            subTitle: "from € 190 per month",
+            link: "flex",
+        },
+        {
+            image: "of_5.jpg",
+            title: "Conference rooms",
+            subTitle: "from € 10 per hour",
+            link: "/meeting",
+        },
+        {
+            image: "off_3.jpeg",
+            title: "Postmail",
+            subTitle: "from € 30 per month",
+            link: "co",
+        },
+        {
+            image: "off_1.jpg",
+            title: "Workshop space",
+            subTitle: "from € 125 per day",
+            link: "prv",
+        },
+        {
+            image: "off_4.jpeg",
+            title: "Reception room",
+            subTitle: "from € 250 per day",
+            link: "virtual",
+        },
     ];
 
     return (
@@ -89,7 +120,14 @@ const Footer = () => {
                             <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">
                                 Address
                             </h5>
-                            <div>Exchange tower, 2004, Buisness Bay, Dubai</div>
+                            <div className="mb-4">
+                                <span>CoworkInn</span>
+                                <br />
+                                <span>Korte Lozanastraat 26,</span>
+                                <br />
+                                <span>2018 Antwerpen</span>
+                                <br />
+                            </div>
                         </div>
                     </div>
 
