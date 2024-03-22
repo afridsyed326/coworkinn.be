@@ -7,23 +7,23 @@ function GoogleTranslate({ lang }) {
     const googleTranslateRef = useRef(null);
 
     useEffect(() => {
-        // const script = document.createElement("script");
-        // script.type = "text/javascript";
-        // script.src =
-        //     "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-        // script.async = true;
-        // script.defer = true;
-        // document.body.appendChild(script);
+        const script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src =
+            "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
 
-        // window.googleTranslateElementInit = googleTranslateElementInit;
+        window.googleTranslateElementInit = googleTranslateElementInit;
 
-        // // Cleanup function for reinitialization
-        // return () => {
-        //     const translateElement = document.getElementById(
-        //         "google_translate_element"
-        //     );
-        //     translateElement.innerHTML = "";
-        // };
+        // Cleanup function for reinitialization
+        return () => {
+            const translateElement = document.getElementById(
+                "google_translate_element"
+            );
+            translateElement.innerHTML = "";
+        };
     }, []);
 
     const googleTranslateElementInit = () => {
