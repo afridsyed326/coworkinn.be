@@ -66,10 +66,10 @@ const Flex = () => {
             name: "Comfort airco",
             icon: <LuThermometerSnowflake />,
         },
-        {
-            name: "Comfort douche",
-            icon: <FaShower />,
-        },
+        // {
+        //     name: "Comfort douche",
+        //     icon: <FaShower />,
+        // },
         {
             name: "Comfort coffee corner",
             icon: <MdOutlineCoffeeMaker />,
@@ -78,10 +78,10 @@ const Flex = () => {
             name: "Charging stations",
             icon: <MdElectricCar />,
         },
-        {
-            name: "Access to meeting rooms",
-            icon: <IoPeople />,
-        },
+        // {
+        //     name: "Access to meeting rooms",
+        //     icon: <IoPeople />,
+        // },
         {
             name: "Accessible 24/7",
             icon: <MdMoreTime />,
@@ -91,11 +91,11 @@ const Flex = () => {
             name: "Copy/scan (excl. usage)",
             icon: <FiPrinter />,
         },
-        {
-            name: "Outdoor lounge",
-            icon: <GrLounge />,
-            available: true,
-        },
+        // {
+        //     name: "Outdoor lounge",
+        //     icon: <GrLounge />,
+        //     available: true,
+        // },
         {
             name: "Dedicated staff",
             icon: <LiaPeopleCarrySolid />,
@@ -149,7 +149,8 @@ const Flex = () => {
             <Hero
                 text="FLEX OFFICE"
                 bgUrl="../images/of_1.jpg"
-                desc="Don’t need a fixed abode?  Hire an office for the times you need it.  And enjoy additional use of all the facilities we offer our non-flex clients. We even have a lounge flex office which is ideal for personal coaching companies."
+                desc="Cowork inn offers you a comfortable workspace while taking into account the necessary privacy.
+                In your workroom you can find all the connections needed to carry out your work in a professional manner."
             />
             <div className="px-2 sm:px-52 bg-primary">
                 <div className="p-10 sm:py-14 sm:px-24  flex flex-col gap-6 justify-between items-center">

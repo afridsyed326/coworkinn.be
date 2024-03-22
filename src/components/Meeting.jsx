@@ -50,12 +50,11 @@ const Meeting = () => {
             <div className="p-2 text-center text-lg my-6">
                 <span className="">
                     <br />
-                    Do you require an ad-hoc meeting?
+                    If you have different meetings that you want to organize, this is possible at Cowork inn!
                     <br />
-                    Non-residents can also book a meeting room with us.
+                    Receive your guests and/or visitors in a beautiful meeting room that is equipped with the necessary facilities.
                     <br />
-                    Greet your visitors in a professional setting with all the
-                    facilities you may require.
+                    Non-tenants can also book the meeting room with us.
                     <br />
                 </span>
             </div>
@@ -69,7 +68,7 @@ const Meeting = () => {
                 </div>
             </div>
 
-            <div className="mt-24 grid grid-cols-2 sm:grid-cols-3 gap-5 mx-2 sm:mx-32 justify-center items-center">
+            <div className="mt-24 grid grid-cols-2 sm:grid-cols-3 gap-5 mx-2 sm:mx-32 justify-center items-center hidden">
                 {meetingsRooms.map((mr, i) => (
                     <div
                         key={i}
@@ -85,7 +84,7 @@ const Meeting = () => {
                 ))}
             </div>
 
-            <div className="w-full bg-gray-100 p-3 sm:px-24 mt-10">
+            <div className="w-full bg-gray-100 p-3 sm:px-24 mt-10 hidden">
                 <div className="w-full text-center font-bold text-3xl my-3">
                     Our meeting rooms
                 </div>

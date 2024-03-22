@@ -67,10 +67,10 @@ const Virtual = () => {
             name: "Comfort airco",
             icon: <LuThermometerSnowflake />,
         },
-        {
-            name: "Comfort douche",
-            icon: <FaShower />,
-        },
+        // {
+        //     name: "Comfort douche",
+        //     icon: <FaShower />,
+        // },
         {
             name: "Comfort coffee corner",
             icon: <MdOutlineCoffeeMaker />,
@@ -79,10 +79,10 @@ const Virtual = () => {
             name: "Charging stations",
             icon: <MdElectricCar />,
         },
-        {
-            name: "Access to meeting rooms",
-            icon: <IoPeople />,
-        },
+        // {
+        //     name: "Access to meeting rooms",
+        //     icon: <IoPeople />,
+        // },
         {
             name: "Accessible 24/7",
             icon: <MdMoreTime />,
@@ -92,11 +92,11 @@ const Virtual = () => {
             name: "Copy/scan (excl. usage)",
             icon: <FiPrinter />,
         },
-        {
-            name: "Outdoor lounge",
-            icon: <GrLounge />,
-            available: true,
-        },
+        // {
+        //     name: "Outdoor lounge",
+        //     icon: <GrLounge />,
+        //     available: true,
+        // },
         {
             name: "Dedicated staff",
             icon: <LiaPeopleCarrySolid />,
@@ -141,7 +141,7 @@ const Virtual = () => {
             <Hero
                 text="RECEPTION ROOM"
                 bgUrl="../images/of_1.jpg"
-                desc="Are you looking into the possibilities of giving your company a professional address? For a modest fee we manage your post and keep you up-to-date of important correspondence."
+                desc="If you need a space for your receptions, we will provide a space that is fully equipped to hold your receptions according to your own wishes."
             />
 
             <div className="m-2 mt-10 sm:mt-14 sm:m-14">

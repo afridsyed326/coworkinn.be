@@ -87,19 +87,9 @@ const Home = () => {
 
             <div className="text-primary font-bold my-10 mx-2 sm:mx-32">
                 <p>
-                    Cowork Inn offers versatile workspace solutions, including
-                    Private Offices, Flex Offices, and Coworking Spaces. Elevate
-                    your meetings with our state-of-the-art Meeting Rooms. Find
-                    the perfect office formula for your entrepreneurial journey.
-                    Our objective? Providing start-ups and international players
-                    with a base whilst they gain a foothold in Europe, and
-                    providing them with the best opportunities to evolve their
-                    business in as ideal a setting as possible. That is what
-                    Cowork Inn is all about: helping entrepreneurship ferment
-                    and brew into profitable concerns. We provide a professional
-                    base to dynamic entrepreneurs, with access to
-                    state-of-the-art facilities and an office layout based on
-                    individual requirements and growth plans.
+                Cowork Inn has the right office formula for you:
+With the Flex Office you have your own office space together with other colleagues and/or tenants.
+You can use all facilities such as the copy place, coffee room and meeting room. 
                 </p>
             </div>
 

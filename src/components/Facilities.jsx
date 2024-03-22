@@ -57,10 +57,10 @@ const Facilities = () => {
             name: "Comfort airco",
             icon: <LuThermometerSnowflake />,
         },
-        {
-            name: "Comfort douche",
-            icon: <FaShower />,
-        },
+        // {
+        //     name: "Comfort douche",
+        //     icon: <FaShower />,
+        // },
         {
             name: "Comfort coffee corner",
             icon: <MdOutlineCoffeeMaker />,
@@ -69,10 +69,10 @@ const Facilities = () => {
             name: "Charging stations",
             icon: <MdElectricCar />,
         },
-        {
-            name: "Access to meeting rooms",
-            icon: <IoPeople />,
-        },
+        // {
+        //     name: "Access to meeting rooms",
+        //     icon: <IoPeople />,
+        // },
         {
             name: "Accessible 24/7",
             icon: <MdMoreTime />,
@@ -81,10 +81,10 @@ const Facilities = () => {
             name: "Copy/scan (excl. usage)",
             icon: <FiPrinter />,
         },
-        {
-            name: "Outdoor lounge",
-            icon: <GrLounge />,
-        },
+        // {
+        //     name: "Outdoor lounge",
+        //     icon: <GrLounge />,
+        // },
         {
             name: "Dedicated staff",
             icon: <LiaPeopleCarrySolid />,
@@ -134,7 +134,7 @@ const Facilities = () => {
     }, []);
 
     const heroDesc =
-        "Cowork Inn offers its users a whole range of standard and supplementary facilities; tell us your leasing requirements and we’ll do the rest!";
+        "Cowork Inn offers its tenants various facilities such as; meeting room, workshop room, reception room, copy place, etc.. Let us know what your wishes are and we will take care of this!";
 
     return (
         <div className="w-full mb-10">
@@ -161,7 +161,7 @@ const Facilities = () => {
                 </div>
             </div>
 
-            <div className="bg-gray-100 py-4 px-2 sm:px-48 sm:py-20">
+            {/* <div className="bg-gray-100 py-4 px-2 sm:px-48 sm:py-20">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
                     {features.map((fe, i) => (
                         // <Link to="contact" key={i}>
@@ -181,7 +181,7 @@ const Facilities = () => {
                         // </Link>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             <div className="bg-primary px-2 sm:px-52">
                 <div className="p-10 sm:py-14 sm:px-24  flex flex-col gap-6 justify-between items-center">

@@ -67,10 +67,10 @@ const Cowork = () => {
             name: "Comfort airco",
             icon: <LuThermometerSnowflake />,
         },
-        {
-            name: "Comfort douche",
-            icon: <FaShower />,
-        },
+        // {
+        //     name: "Comfort douche",
+        //     icon: <FaShower />,
+        // },
         {
             name: "Comfort coffee corner",
             icon: <MdOutlineCoffeeMaker />,
@@ -79,10 +79,10 @@ const Cowork = () => {
             name: "Charging stations",
             icon: <MdElectricCar />,
         },
-        {
-            name: "Access to meeting rooms",
-            icon: <IoPeople />,
-        },
+        // {
+        //     name: "Access to meeting rooms",
+        //     icon: <IoPeople />,
+        // },
         {
             name: "Accessible 24/7",
             icon: <MdMoreTime />,
@@ -92,11 +92,11 @@ const Cowork = () => {
             name: "Copy/scan (excl. usage)",
             icon: <FiPrinter />,
         },
-        {
-            name: "Outdoor lounge",
-            icon: <GrLounge />,
-            available: true,
-        },
+        // {
+        //     name: "Outdoor lounge",
+        //     icon: <GrLounge />,
+        //     available: true,
+        // },
         {
             name: "Dedicated staff",
             icon: <LiaPeopleCarrySolid />,
@@ -141,7 +141,7 @@ const Cowork = () => {
             <Hero
                 text="POSTMAIL"
                 bgUrl="../images/of_1.jpg"
-                desc="Enhance your professional image with our exclusive PostMail Service, available for just 30 Euros per month. Secure a prestigious business address, enjoy efficient mail handling and forwarding, and stay connected with real-time notifications. Elevate your workspace experience at CoworkInn – Where Connectivity Meets Convenience!"
+                desc="Our postmail service will ensure that you always receive your mail in your mailbox. We scan everything and forward it to your email. If you prefer to open your mail yourself, we will ensure that everything is neatly placed in your container."
             />
 
             <div className="m-2 mt-10 sm:mt-14 sm:m-14">

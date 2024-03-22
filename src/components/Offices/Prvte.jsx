@@ -67,10 +67,10 @@ const Prvte = () => {
             name: "Comfort airco",
             icon: <LuThermometerSnowflake />,
         },
-        {
-            name: "Comfort douche",
-            icon: <FaShower />,
-        },
+        // {
+        //     name: "Comfort douche",
+        //     icon: <FaShower />,
+        // },
         {
             name: "Comfort coffee corner",
             icon: <MdOutlineCoffeeMaker />,
@@ -79,10 +79,10 @@ const Prvte = () => {
             name: "Charging stations",
             icon: <MdElectricCar />,
         },
-        {
-            name: "Access to meeting rooms",
-            icon: <IoPeople />,
-        },
+        // {
+        //     name: "Access to meeting rooms",
+        //     icon: <IoPeople />,
+        // },
         {
             name: "Accessible 24/7",
             icon: <MdMoreTime />,
@@ -92,11 +92,11 @@ const Prvte = () => {
             name: "Copy/scan (excl. usage)",
             icon: <FiPrinter />,
         },
-        {
-            name: "Outdoor lounge",
-            icon: <GrLounge />,
-            available: true,
-        },
+        // {
+        //     name: "Outdoor lounge",
+        //     icon: <GrLounge />,
+        //     available: true,
+        // },
         {
             name: "Dedicated staff",
             icon: <LiaPeopleCarrySolid />,
@@ -138,7 +138,7 @@ const Prvte = () => {
 
     return (
         <div>
-            <Hero text="WORKSHOP SPACE" bgUrl="../images/of_1.jpg" />
+            <Hero text="WORKSHOP SPACE" desc="If you need a workspace for just a few days, you can do so at Cowork Inn. We provide an optimal workspace with all necessary facilities. You only pay an amount per day and can immediately use your office space." bgUrl="../images/of_1.jpg" />
 
             <div className="m-2 mt-10 sm:mt-14 sm:m-14">
                 <div className="font-bold text-4xl">
