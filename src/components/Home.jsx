@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import Hero from "./common/Hero";
 import { Link } from "react-router-dom";
-import { LiaCarSolid } from "react-icons/lia";
+import { FaHandshake } from "react-icons/fa";
 import { GiTwoCoins } from "react-icons/gi";
 import { MdSupportAgent } from "react-icons/md";
 
 const Home = () => {
     const features = [
         {
-            name: "Come in with a smile",
-            icon: <LiaCarSolid />,
-            desc: "Ample, spacious parking for you and your visitors",
+            name: "A networking space",
+            icon: <FaHandshake />,
+            desc: "Connect with potential new business clients or partners",
         },
         {
             name: "Worthwhile solution right from the start",

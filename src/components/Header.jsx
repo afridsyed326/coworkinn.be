@@ -52,11 +52,11 @@ const Header = () => {
 
     return (
         <div className="z-[10000] sticky top-0 left-0 border-b border-primary bg-primary flex justify-center items-center">
-            <div className="container w-[100vw] flex justify-between items-left sm:gap-10 p-3 py-4 sm:px-8 flex-col sm:flex-row">
+            <div className="container w-[100vw] flex justify-between items-left sm:gap-10 p-3 py-3 sm:px-8 flex-col sm:flex-row">
                 <Link to="/">
                     <div className="w-full flex justify-between items-center">
                         <img
-                            className="h-[35px] sm:h-[55px]"
+                            className="h-[35px] sm:h-[70px]"
                             src="images/logo.png"
                         />
                         <div

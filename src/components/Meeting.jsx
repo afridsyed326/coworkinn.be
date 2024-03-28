@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Hero from "./common/Hero";
+import { Link } from "react-router-dom";
 
 const Meeting = () => {
     const meetingsRooms = [
@@ -59,14 +60,14 @@ const Meeting = () => {
                 </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center gap-2 sm:gap-10 mx-2 sm:mx-32">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center gap-2 sm:gap-10 mx-2 sm:mx-32">
                 <div className="bg-primary text-center cursor-pointer text-white px-8 py-2 rounded-full font-bold text-lg">
                     Already a User? Log in now
                 </div>
                 <div className="bg-textClr text-center cursor-pointer text-white px-8 py-2 rounded-full font-bold text-lg">
                     New User? Request your login details
                 </div>
-            </div>
+            </div> */}
 
             <div className="mt-24 grid grid-cols-2 sm:grid-cols-3 gap-5 mx-2 sm:mx-32 justify-center items-center hidden">
                 {meetingsRooms.map((mr, i) => (
@@ -106,9 +107,12 @@ const Meeting = () => {
                     <div className="text-white font-bold text-2xl sm:text-4xl">
                         Need a meeting room?
                     </div>
+                    
+                    <Link to="/contact">
                     <div className="bg-textClr mt-4 sm:mt-0 text-center cursor-pointer text-white px-8 pt-2 pb-3 rounded-full font-bold text-sm sm:text-2xl">
                         Book a meeting room
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>

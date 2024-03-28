@@ -75,19 +75,19 @@ const Virtual = () => {
             name: "Comfort coffee corner",
             icon: <MdOutlineCoffeeMaker />,
         },
-        {
-            name: "Charging stations",
-            icon: <MdElectricCar />,
-        },
+        // {
+        //     name: "Charging stations",
+        //     icon: <MdElectricCar />,
+        // },
         // {
         //     name: "Access to meeting rooms",
         //     icon: <IoPeople />,
         // },
-        {
-            name: "Accessible 24/7",
-            icon: <MdMoreTime />,
-            // available: true,
-        },
+        // {
+        //     name: "Accessible 24/7",
+        //     icon: <MdMoreTime />,
+        //     // available: true,
+        // },
         {
             name: "Copy/scan (excl. usage)",
             icon: <FiPrinter />,
@@ -97,19 +97,19 @@ const Virtual = () => {
         //     icon: <GrLounge />,
         //     available: true,
         // },
-        {
-            name: "Dedicated staff",
-            icon: <LiaPeopleCarrySolid />,
-        },
+        // {
+        //     name: "Dedicated staff",
+        //     icon: <LiaPeopleCarrySolid />,
+        // },
         {
             name: "Catering service",
             icon: <MdOutlineFastfood />,
         },
-        {
-            name: "Ample parking",
-            icon: <LiaCarSolid />,
-            available: true,
-        },
+        // {
+        //     name: "Ample parking",
+        //     icon: <LiaCarSolid />,
+        //     available: true,
+        // },
         {
             name: "Covered bicycle parking",
             icon: <PiBicycleLight />,
@@ -118,10 +118,10 @@ const Virtual = () => {
             name: "Cleaning and maintenance",
             icon: <GiVacuumCleaner />,
         },
-        {
-            name: "Waste management (container)",
-            icon: <IoTrashBinOutline />,
-        },
+        // {
+        //     name: "Waste management (container)",
+        //     icon: <IoTrashBinOutline />,
+        // },
     ];
 
     const meetingImages = [

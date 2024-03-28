@@ -65,18 +65,18 @@ const Facilities = () => {
             name: "Comfort coffee corner",
             icon: <MdOutlineCoffeeMaker />,
         },
-        {
-            name: "Charging stations",
-            icon: <MdElectricCar />,
-        },
+        // {
+        //     name: "Charging stations",
+        //     icon: <MdElectricCar />,
+        // },
         // {
         //     name: "Access to meeting rooms",
         //     icon: <IoPeople />,
         // },
-        {
-            name: "Accessible 24/7",
-            icon: <MdMoreTime />,
-        },
+        // {
+        //     name: "Accessible 24/7",
+        //     icon: <MdMoreTime />,
+        // },
         {
             name: "Copy/scan (excl. usage)",
             icon: <FiPrinter />,
@@ -85,18 +85,18 @@ const Facilities = () => {
         //     name: "Outdoor lounge",
         //     icon: <GrLounge />,
         // },
-        {
-            name: "Dedicated staff",
-            icon: <LiaPeopleCarrySolid />,
-        },
+        // {
+        //     name: "Dedicated staff",
+        //     icon: <LiaPeopleCarrySolid />,
+        // },
         {
             name: "Catering service",
             icon: <MdOutlineFastfood />,
         },
-        {
-            name: "Ample parking",
-            icon: <LiaCarSolid />,
-        },
+        // {
+        //     name: "Ample parking",
+        //     icon: <LiaCarSolid />,
+        // },
         {
             name: "Covered bicycle parking",
             icon: <PiBicycleLight />,
@@ -105,10 +105,10 @@ const Facilities = () => {
             name: "Cleaning and maintenance",
             icon: <GiVacuumCleaner />,
         },
-        {
-            name: "Waste management (container)",
-            icon: <IoTrashBinOutline />,
-        },
+        // {
+        //     name: "Waste management (container)",
+        //     icon: <IoTrashBinOutline />,
+        // },
     ];
 
     const features = [
